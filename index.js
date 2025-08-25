@@ -67,3 +67,11 @@ function deleteTodoSync(id) {
   fs.writeFileSync(dbPath, updatedContent);
   return true;
 }
+
+module.exports = {
+    createTodoSync,
+    getTodosSync,
+    getTodoSync,
+    updateTodoSync,
+    deleteTodoSync
+  };
